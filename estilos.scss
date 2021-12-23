@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// Variables //
+$color1: white;
+$color2: black;
+$color3: grey;
+$color4: red;
+$color5: orange;
+$color6: blue;
+$color7: blueviolet;
+
+$fontsmall: 20px;
+$fontmedium: 40px;
+$fontlarge: 60px;
+
+$font1: cursive; 
+$font2: Verdana, Geneva, Tahoma, sans-serif;
+$font3: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+// Contenido /
+
+body{
+    height: 200px;
+    background-image: linear-gradient(to bottom, $color6, $color1);
+    background-repeat: no-repeat;
+}
+header{
+    width: 100%;
+    height: 50px;
+}
+.logo{
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 5px;
+    border: $color1 5px solid;
+}
+ul{
+    width: auto;
+    float: right;
+    margin-right: 80px;
+    padding-top: 40px;
+}
+li{
+    display: inline-block;
+    padding-left: 50px;
+}
+a{
+    text-align: center;
+    color: $color1;
+    text-decoration: none;
+    font-family: $font2;
+    font-size: $fontsmall;
+    padding: 8px;
+}
+ul li a:hover{
+    color:$color7;
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+.title{
+    color: $color4;
+    text-align: center;
+    margin-top: 100px;
+    font-family: $font3;
+}
+.subtitle{
+    color: $color5;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: $font3;
+}
+.itempadre{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "card1 card2 card3"
+    "card4 card5 card6"   
+    ;
+}
+.itempadre div{
+    background-color: $color5;
+    border: $color2 2px solid;
+    height: 390px;
+    width: 100%;
+}
+.itempadre div img{   
+    max-width: 100%;
+    height: auto;
+}
+.item1{
+    grid-area: card1;
+}
+
+.item2{
+    grid-area: card2;
+}
+.item3{
+    grid-area: card3;
+}
+.item4{
+    grid-area: card4;
+}
+.item5{
+    grid-area: card5;
+}
+.item6{
+    grid-area: card6;
+}
+
+footer{
+    height: 170px;
+    background-color: $color2;
+    color: $color1;
+}
+.footbox{
+    padding: 20px;
+    display: flex;
+}
+.foot1{
+    color: $color4;
+}
+.foot2{
+    color: $color5;
+}
+.foot3{
+    color: $color3;
+}
+.foot4{
+    color: $color6;
+}
+.foot5{
+    text-align: center;
+    padding: 10px;
+    border: 2px solid $color1;
+    background-color: $color3;
+}
